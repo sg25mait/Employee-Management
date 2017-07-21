@@ -13,6 +13,7 @@ from flask_migrate import Migrate
 # after existing third-party imports
 from flask_login import LoginManager
 
+from flask_bootstrap import Bootstrap
 
 # db variable initialization
 db = SQLAlchemy()
@@ -31,6 +32,9 @@ def create_app(config_name):
     login_manager.login_view = "auth.login"
 
     migrate = Migrate(app, db)
+
+    Bootstrap(app)
+    
     from app import models
 
     from .admin import admin as admin_blueprint
@@ -41,5 +45,5 @@ def create_app(config_name):
 
     from .home import home as home_blueprint
     app.register_blueprint(home_blueprint)
-    
+
     return app
