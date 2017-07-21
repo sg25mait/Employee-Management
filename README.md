@@ -7,7 +7,7 @@ I think thats all.
 
 ERRORS : 
 Some problems which i faced:
-1. Make sure that everything is of same configuration what i mean is if you are insatlling x64 version of python make sure that mysql is of same version.
+1. Make sure that everything is of same configuration what i mean is if you are insatlling x64 version of python make sure that mysql is of same version and extensions.
 2. Second to download extensions follow this link : http://www.lfd.uci.edu/~gohlke/pythonlibs/#mysql-python 
 3. User can even download dependencies/extensions from command prompt/bash directly but in case you need different versions(x32/x64) of them refer to above link.
 4. During execution if you get error to set environment variables:
